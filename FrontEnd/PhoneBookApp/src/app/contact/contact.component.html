@@ -1,6 +1,17 @@
 <app-contactaddedit (onAddContact)="addContact($event)"></app-contactaddedit>
+
+ 
+  <div class="form-control">
+    <input
+      type="text"
+      name="Search"
+      placeholder="Search"
+      [ngModel]="searchedTerm"
+    />
+  </div>
+
 <app-contactitem
-  *ngFor="let objcont of contacts"  
+  *ngFor="let objcont of contacts | searchFilter: searchedTerm"
   [contactobj]="objcont"
   (onDeleteContact)="deleteContact(objcont)"
 ></app-contactitem>

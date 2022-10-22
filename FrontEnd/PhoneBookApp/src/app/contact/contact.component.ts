@@ -7,8 +7,8 @@ import { IContactDto, PhonebookService,ContactsModel } from '../Services/phonebo
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  
-  contacts:IContactDto[] | undefined;
+  searchedTerm:string;
+  contacts:IContactDto[];
   constructor(private _phonebookservice:PhonebookService) { }
 
   ngOnInit(): void {

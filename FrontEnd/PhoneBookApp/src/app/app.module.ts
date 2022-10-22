@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './search-filter.pipe';
 const appRoutes: Routes = [
   { path: '', component: ContactComponent }];
 @NgModule({
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     ContactitemComponent,
     ButtonComponent,
     ContactaddeditComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
