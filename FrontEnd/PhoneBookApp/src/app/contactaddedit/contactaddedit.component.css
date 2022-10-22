@@ -1,0 +1,9 @@
+.add-form {
+    margin-bottom: 40px;
+  }
+  .invalid-feedback {
+    
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}

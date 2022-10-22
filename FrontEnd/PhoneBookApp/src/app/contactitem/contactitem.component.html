@@ -1,0 +1,19 @@
+<div
+  class="contact"
+>
+  <h3>
+    {{ contactobj.name }}
+    <fa-icon
+        (click)="deletecontact(contactobj)"
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+    ></fa-icon>
+    <fa-icon
+    [ngStyle]="{ color: 'black' }"
+    [icon]="fapencil"
+    (click)="editcontact(contactobj)"
+  ></fa-icon>
+  </h3>
+  <p>{{ contactobj.phonenumber }}</p>
+</div>
+

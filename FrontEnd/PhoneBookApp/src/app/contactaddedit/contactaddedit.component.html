@@ -1,0 +1,59 @@
+<form *ngIf="showAddContact" (ngSubmit)="onSubmit()" class="add-form" [formGroup]="form">
+ 
+    <div class="form-control">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="fullname"
+        placeholder="Name"
+        formControlName="fullname"
+        [(ngModel)]="name"
+        [ngClass]="{ 'is-invalid': submitted && f.fullname.errors }"
+      />
+      <div *ngIf="submitted && f.fullname.errors" class="invalid-feedback">
+        <div *ngIf="f.fullname.errors.required">Fullname is required</div>
+      </div>
+    </div>
+    <div class="form-control">
+        <label for="countrycode">Country Code</label>
+        <input
+          type="text"
+          name="countrycode"
+          formControlName="countrycode"
+          id="countrycode"
+          placeholder="country Code"
+          [(ngModel)]="countryExtension"
+          [ngClass]="{ 'is-invalid': submitted && f.countrycode.errors }"
+        />
+        <div *ngIf="submitted && f.countrycode.errors" class="invalid-feedback">
+          <div *ngIf="f.countrycode.errors.required">Country code is required</div>
+        </div>
+      </div>
+    <div class="form-control">
+      <label for="phonenumber">Contact Number</label>
+      <input
+        type="text"
+        name="contactphonenumber"
+        id="phonenumber"
+        placeholder="contact number"
+        formControlName="contactphonenumber"
+        [(ngModel)]="phonenumber"
+        [ngClass]="{ 'is-invalid': submitted && f.contactphonenumber.errors }"
+      />
+      <div *ngIf="submitted && f.contactphonenumber.errors" class="invalid-feedback">
+        <div *ngIf="f.contactphonenumber.errors.required">Contact number is required</div>
+      </div>
+    </div>
+    <div class="form-control">
+      <label for="company">Company</label>
+      <input
+      type="text"
+      name="contactcompany"
+      id="company"
+      placeholder="company"
+      formControlName="contactcompany"
+      [(ngModel)]="company"
+    />
+    </div>
+    <input type="submit" value="{{ buttonText }}" class="btn btn-block" />
+  </form>
