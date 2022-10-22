@@ -17,7 +17,8 @@ Step 3 : ng s
 
 
 
-![image](https://user-images.githubusercontent.com/47097294/197356552-7e5190e7-0b3f-400d-8e77-706cfdf5b356.png)
+![image](https://user-images.githubusercontent.com/47097294/197357753-c1159cb5-a698-459b-a956-d59a690deddd.png)
+
 
 ![image](https://user-images.githubusercontent.com/47097294/197356569-8a48f54f-ef31-4b3d-b5fb-efa2085d5824.png)
 
