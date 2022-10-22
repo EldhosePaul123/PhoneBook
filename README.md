@@ -20,6 +20,4 @@ Step 3 : ng s
 ![image](https://user-images.githubusercontent.com/47097294/197357753-c1159cb5-a698-459b-a956-d59a690deddd.png)
 
 
-![image](https://user-images.githubusercontent.com/47097294/197356569-8a48f54f-ef31-4b3d-b5fb-efa2085d5824.png)
-
 ![image](https://user-images.githubusercontent.com/47097294/197356601-6d6806cc-87ce-491a-aad0-16eb2b3d1e1a.png)
